@@ -1,0 +1,29 @@
+/* 
+  Styles for html, body, and #root elements 
+  Ensures the 3D scene occupies the entire viewport 
+*/
+
+/**
+ * @description
+ * Sets the html, body, and #root elements to occupy the full viewport, 
+ * and applies a black background color.
+ */
+html,
+body,
+#root {
+  position: fixed; /* Fixes the elements in place */
+  top: 0; /* Aligns elements to the top of the viewport */
+  left: 0; /* Aligns elements to the left of the viewport */
+  width: 100%; /* Sets the width to 100% of the viewport */
+  height: 100%; /* Sets the height to 100% of the viewport */
+  background-color: black; /* Sets the background color to black */
+}
+
+/**
+  * @description
+  * Prevents touch actions like scrolling on the canvas element,
+  * ensuring touch interactions are handled by the 3D scene.
+  */
+canvas {
+  touch-action: none; /* Disables touch actions */
+}
